@@ -1,0 +1,23 @@
+name: Unzip
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kicsomagolas
+        run: |
+          unzip -q kutya-admin-teljes-projekt-v2.zip -d tmp
+          rm -rf tmp/__MACOSX
+          shopt -s dotglob
+          if [ "$(ls tmp | wc -l)" -eq 1 ] && [ -d "tmp/$(ls tmp)" ]; then mv tmp/*/* .; else mv tmp/* .; fi
+          rm -rf tmp kutya-admin-teljes-projekt-v2.zip
+      - name: Mentes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Kicsomagolt projekt"
+          git push
