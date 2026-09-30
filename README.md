@@ -40,3 +40,4 @@ Teljes, privát kutyatenyésztési, kennel-, kölyökkutya-átadási, egészség
 - a napi kennel checklist kulcsa `(kennel_id, task_date, task_key)`, így a hat kennel adatai nem keverednek.
 - egy kutya egy időben legfeljebb egy aktív kennel-hozzárendelésben szerepelhet.
 - a törlés helyett a kutyák státusza archiválható, így a kapcsolatok megmaradnak.
+  
