@@ -1,0 +1,2 @@
+import {CrudPage} from '@/components/CrudPage';
+export default function Page(){return <CrudPage title="Egészségügy" table="health_records" order="event_date" searchKeys={['event_type','description','notes']} fields={[{key:'dog_id',label:'Kutya ID',required:true},{key:'event_date',label:'Dátum',type:'date',required:true},{key:'event_type',label:'Esemény típusa',required:true},{key:'description',label:'Leírás'},{key:'notes',label:'Megjegyzés'}]}/>}

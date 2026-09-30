@@ -1,0 +1,1 @@
+import {CrudPage} from '@/components/CrudPage';export default function Page(){return <CrudPage title="Kiadások" table="expenses" fields={[{key:'amount',label:'Összeg',type:'number',required:true},{key:'expense_date',label:'Dátum',type:'date',required:true},{key:'category',label:'Kategória'},{key:'notes',label:'Megjegyzés'}]}/>} 

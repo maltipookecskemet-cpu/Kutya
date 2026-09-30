@@ -1,0 +1,1 @@
+import {CrudPage} from '@/components/CrudPage';export default function Page(){return <CrudPage title="Tenyésztési naptár" table="calendar_events" fields={[{key:'event_date',label:'Dátum',type:'date',required:true},{key:'title',label:'Esemény',required:true},{key:'event_type',label:'Típus',required:true},{key:'dog_id',label:'Kutya ID'},{key:'notes',label:'Megjegyzés'}]}/>} 

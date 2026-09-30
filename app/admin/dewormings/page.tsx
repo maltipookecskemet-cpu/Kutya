@@ -1,0 +1,1 @@
+import {CrudPage} from '@/components/CrudPage';export default function Page(){return <CrudPage title="Féreghajtások" table="dewormings" fields={[{key:'dog_id',label:'Kutya ID',required:true},{key:'date',label:'Dátum',type:'date',required:true},{key:'product',label:'Készítmény'},{key:'dose',label:'Adag'},{key:'next_date',label:'Következő',type:'date'}]}/>} 

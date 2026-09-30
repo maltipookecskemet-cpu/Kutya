@@ -1,0 +1,1 @@
+import {CrudPage} from '@/components/CrudPage';export default function Page(){return <CrudPage title="Dokumentumok" table="documents" fields={[{key:'name',label:'Név',required:true},{key:'path',label:'Fájl útvonala',required:true},{key:'mime_type',label:'Típus'},{key:'dog_id',label:'Kutya ID'},{key:'litter_id',label:'Alom ID'}]}/>} 

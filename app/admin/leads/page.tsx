@@ -1,0 +1,1 @@
+import {CrudPage} from '@/components/CrudPage';export default function Page(){return <CrudPage title="Érdeklődők" table="leads" fields={[{key:'name',label:'Név',required:true},{key:'phone',label:'Telefonszám'},{key:'email',label:'Email'},{key:'whatsapp',label:'WhatsApp'},{key:'viber',label:'Viber'},{key:'breed_interest',label:'Keresett fajta'},{key:'status',label:'Státusz'}]}/>} 

@@ -1,0 +1,2 @@
+export type DogStatus='AVAILABLE'|'RESERVED'|'SOLD'|'ARCHIVED';
+export type Dog={id:string;name:string;breed:string|null;sex:string|null;birth_date:string|null;chip_number:string|null;status:DogStatus;price:number|null;is_adult:boolean;is_female:boolean;is_male:boolean;color:string|null;size:string|null;weight:number|null;notes:string|null;mother_id:string|null;father_id:string|null;litter_id:string|null;};

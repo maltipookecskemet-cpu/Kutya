@@ -1,0 +1,1 @@
+import {CrudPage} from '@/components/CrudPage';export default function Page(){return <CrudPage title="Archívum" table="dogs" fields={[{key:'name',label:'Név',required:true},{key:'breed',label:'Fajta'},{key:'chip_number',label:'Chip'},{key:'status',label:'Státusz'}]}/>} 
